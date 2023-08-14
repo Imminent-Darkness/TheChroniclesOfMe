@@ -2,7 +2,7 @@
 
 h1,
 p,
-a{
+a {
   margin: 0;
   padding: 0;
   font-family: 'Lato';
@@ -22,12 +22,11 @@ p {
 
 .header {
   width: 100%;
-  padding:60px 0;
+  padding: 60px 0;
   text-align: center;
-  background: #33cccc;
-  color: white;
+  background: #417199;
+  color: rgb(194, 192, 192);
 }
-
 
 .btn-bgstroke {
   font-size: 20px;
@@ -37,10 +36,10 @@ p {
   border-radius: 10px;
   cursor: pointer;
   font-weight: 300;
-  margin-top: 30px; 
+  margin-top: 30px;
 }
 
 .btn-bgstroke:hover {
   background-color: white;
-  color: #33cccc;
+  color: #417199;
 }
