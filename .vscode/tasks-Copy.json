@@ -19,12 +19,6 @@
 			"label": "npm prune (functions)",
 			"command": "npm prune --production",
 			"problemMatcher": []
-		},
-		{
-			"type": "Live Preview",
-			"workspacePath": "d:\\GitHub\\TheChroniclesOfMe",
-			"problemMatcher": [],
-			"label": "Live Preview: Run Server"
 		}
 	]
 }
