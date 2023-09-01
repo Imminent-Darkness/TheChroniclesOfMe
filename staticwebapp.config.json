@@ -1,4 +1,15 @@
 {
+    "trailingSlash": "always",
+    "routes": [
+        {
+            "route": "/",
+            "rewrite": "/index.html"
+        },
+        {
+            "route": "/resume",
+            "rewrite": "/resume.html"
+        }
+    ],
     "navigationFallback": {
         "rewrite": "/index.html"
     }
