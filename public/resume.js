@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './resume.css';
-import App from './App';
+import './style.css';
+import App from '../src/App';
 
 ReactDOM.render(<App />, document.getElementById('resume'));
