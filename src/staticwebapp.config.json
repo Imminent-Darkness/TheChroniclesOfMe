@@ -1,0 +1,36 @@
+{
+    "trailingSlash": "always",
+    "routes": [
+        {
+            "route": "/",
+            "rewrite": "/index.html"
+        },
+        {
+            "route": "/resume",
+            "rewrite": "/pages/resume.html"
+        },
+        {
+            "route": "/about",
+            "rewrite": "/pages/about.html"
+        },
+        {
+            "route": "/contact",
+            "rewrite": "/pages/contact.html"
+        },
+        {
+            "route": "/education",
+            "rewrite": "/pages/education.html"
+        },
+        {
+            "route": "/services",
+            "rewrite": "/pages/services.html"
+        },
+        {
+            "route": "/works",
+            "rewrite": "/pages/works.html"
+        }
+    ],
+    "navigationFallback": {
+        "rewrite": "/index.html"
+    }
+}
