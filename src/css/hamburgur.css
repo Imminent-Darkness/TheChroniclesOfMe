@@ -23,9 +23,9 @@ body {
     display: none;
   }
   
-  .button {
+  .ham-button {
     position: relative;
-    background-color: white;
+    background-color: #1e2530;
     height: 5rem;
     width: 5rem;
     border-radius: 50%;
@@ -38,20 +38,20 @@ body {
     cursor: pointer;
   }
   
-  .background {
+  .ham-background {
     height: 4rem;
     width: 4rem;
     border-radius: 50%;
     position: fixed;
     top: 5.5vh; 
     right: 5.5vw; 
-    background-image: radial-gradient(green, black);
+    background-image: radial-gradient(black, #f9423a);
     z-index: 1000;
   
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   }
   
-  .nav {
+  .ham-nav {
     height: 100vh;
     position: fixed;
     top: 0;
@@ -62,7 +62,7 @@ body {
     transition: all 0.8s;
   }
   
-  .list {
+  .ham-list {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -98,15 +98,15 @@ body {
   
   .link:hover,
   .link:active {
-    color: lightgreen;
+    color: #ff0037;
     cursor: pointer;
   }
   
   /* functionality */
-  .checkbox:checked ~ .background {
+  .checkbox:checked ~ .ham-background {
     transform: scale(80);
   }
-  .checkbox:checked ~ .nav {
+  .checkbox:checked ~ .ham-nav {
     opacity: 1;
     width: 100%;
     right: 0;
@@ -114,53 +114,53 @@ body {
   
   /*  */
   /* styling hamb ICON */
-  .icon {
+  .ham-icon {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
   
-  .icon,
-  .icon::before,
-  .icon::after {
+  .ham-icon,
+  .ham-icon::before,
+  .ham-icon::after {
     width: 3rem;
     height: 2px;
     background-color: gray;
     display: inline-block;
   }
   
-  .icon::before,
-  .icon::after {
+  .ham-icon::before,
+  .ham-icon::after {
     content: "";
     position: absolute;
     left: 0;
     transition: all 0.2s;
   }
   
-  .icon::before {
+  .ham-icon::before {
     top: -0.8rem;
   }
-  .icon::after {
+  .ham-icon::after {
     top: 0.8rem;
   }
   
-  .button:hover icon:before {
+  .ham-button:hover ham-icon:before {
     top: -1rem;
   }
-  .button:hover icon::after {
+  .ham-button:hover ham-icon::after {
     top: 1rem;
   }
   
-  .checkbox:checked + .button .icon {
+  .checkbox:checked + .ham-button .ham-icon {
     background-color: transparent;
   }
   
-  .checkbox:checked + .button .icon::before {
+  .checkbox:checked + .ham-button .ham-icon::before {
     top: 0;
     transform: rotate(135deg);
   }
-  .checkbox:checked + .button .icon::after {
+  .checkbox:checked + .ham-button .ham-icon::after {
     top: 0;
     transform: rotate(-135deg);
   }

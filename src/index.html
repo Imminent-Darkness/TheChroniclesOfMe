@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <title>Steven Wilkins - Software Engineer </title>
@@ -9,10 +10,32 @@
         href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hamburgur.css">
 
 </head>
 
 <body>
+
+    <!-- hamburger -->
+    <input type="checkbox" id="navi-toggle" class="checkbox" />
+    <label for="navi-toggle" class="ham-button">
+    <span class="ham-icon">&nbsp;</span>
+    </label>
+    <div class="ham-background">&nbsp;</div>
+
+    <!-- nav -->
+    <nav class="ham-nav">
+    <ul class="ham-list">
+        <li class="item"> <a href="/" class="link"> Home </a> </li>
+        <li class="item"> <a href="/education" class="link"> Education </a> </li>
+        <li class="item"> <a href="/services" class="link"> Services </a> </li>
+        <li class="item"> <a href="/resume" class="link"> Resume </a> </li>
+        <li class="item"> <a href="/works" class="link"> Works </a> </li>
+        <li class="item"> <a href="/about" class="link"> About </a></li>
+        <li class="item"> <a href="/contact" class="link"> Contact </a> </li>
+    </ul>
+    </nav>
+
     <!-- partial:index.partial.html -->
     <main class="site-wrapper">
         <div class="pt-table desktop-768">
@@ -35,7 +58,7 @@
                                     cybersecurity and network architecture, I craft holistic solutions that blend
                                     cutting-edge technology with a personalized touch. Let's bring your ideas to life
                                     together.</p>
-                                    { % include hamburger.html % }
+                                    
                             </div>
                             
 
